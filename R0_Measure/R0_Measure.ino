@@ -19,7 +19,7 @@ void loop() {
     /*-----------------------------------------------*/
     sensor_volt = sensorValue/1024*5.0;
     RS_air = (5.0-sensor_volt)/sensor_volt; // omit *RL
-    R0 = RS_air/9.9; // The ratio of RS/R0 is 9.9 in LPG gas from Graph (Found using WebPlotDigitizer)
+    R0 = RS_air/21; // The ratio of RS/R0 is 9.9 in LPG gas from Graph (Found using WebPlotDigitizer)
 
     Serial.print("sensor_volt = ");
     Serial.print(sensor_volt);
